@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Me | Emir Hakimi</title>
+</head>
+<body style="background-color:black;">
+	<!--menu bar-->
+	<div style="font-family:Verdana;">
+	<ul style="padding: 0;background-color: #333333;overflow: hidden; margin:0; list-style-type: none;">
+		<li style="float:left;"><a href="index.html" style="color:white; display:block; padding: 16px; text-decoration:none;">HOME</a></li>
+		<li style="float:left;"><a href="About Me.html" style="color:white; display:block; padding: 16px; text-decoration:none;"> ABOUT</a></li>
+		<li style="float:left;"><a href="Contribution.html" style=" color:white; display:block; padding: 16px; text-decoration:none;"> CONTRIBUTION</a></li>
+		<li style="float:left;"><a href="Contact Me.html" style=" color:white; display:block; padding: 16px; text-decoration:none;"> CONTACT ME</a></li>
+		<li style="float:left;"><a href="Feedback.html" style=" color:white; display:block;padding: 16px; text-decoration:none;"> FEEDBACK</a></li>
+	</ul>
+	</div>
+	<!--link to first page-->
+	<a href="index.html" style="color:white; background-color:#78ccd0; font-size:30px; text-decoration:none; font-family:monospace;"> Back to Home</a>
+	<h1 style="color:white;font-style:italic; font-size:50px; text-align:center; margin-top:50px;">CONTACT ME</h1>
+	<hr style="border: 1px solid green;">
+	<!--contact form-->
+	<table style="color:white; font-size:26px; margin-left:auto; margin-right:auto; margin-top:100px;">
+	<colgroup>
+		<col style="text-align:left;background-color:#b8d992;">
+	</colgroup>
+	<form>
+		<tr>
+			<th>Name : </th>
+			<td><input type="text" style="height:30px; width:228px;"></td>
+		</tr>
+		<tr>
+			<th>Email:</th>
+			<td><input type="email" style="height:35px; width:228px;" required></td>
+		</tr>
+		<tr>
+			<th>Subject:</th> 
+			<td><select name="subject" style="height:35px; width:235px;" required>
+			<option value="Translation Request"> Translation Request </option>
+			<option value="Timing Request"> Timing Request </option>
+			<option value="Other Inquiry"> Other Inquiry </option>
+			</td>
+		</tr>
+		<tr>
+			<th>Message:</th>
+			<td><textarea rol="6" col="5" style="height:30px; width:230px;"></textarea></td>
+		</tr>
+		<tr>
+			<th><label for="myfile">Select a file:</label></th>
+			<td><input type="file" id="myfile" name="myfile"><br><br></td>
+		</tr>
+		<tr><th colspan="2" style="width:0px;"><input type="submit" value="Submit" style="color:white; font-size:25px; width:388px; height:32px border:none; padding:0; background:none;"></th></tr>
+	</form>
+	</table>
+</body>
+</html>
