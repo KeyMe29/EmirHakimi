@@ -1,48 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+	ul{
+		padding: 0;
+		background-color: #333333;
+		overflow: hidden; 
+		margin:0; 
+		list-style-type: none;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	li{
+		float: left;
+	} 
+	li a{
+		color: white;
+		display:block;
+		padding: 16px;
+		text-decoration: none;
+	}	
+	li a:hover:not(.active) {
+		background-color: #111;
+	}	
+	.active {
+		background-color: #4CAF50;
+	}	
+	h1 {
+		color:white; 
+		font-family:monospace; 
+		text-align:center;
+		font-style:italic; 
+		font-size:60px;
+	}
+	p {
+		color:white; 
+		font-size:22px; 
+		font-family:monospace; 
+		margin-top:100px; 
+		text-align:center;
+	}
+	span {
+		color:green;
+		text-decoration:none;
+	}
+	.center {
+		margin:0 auto;
+		width: 500px;
+	}
+</style>
 <head>
-	<title>About | Emir Hakimi</title>
+	<title>Home | Emir Hakimi</title>
 </head>
 <body style="background-color:black;">
 	<!--menu bar-->
 	<div style="font-family:Verdana;">
-	<ul style="padding: 0;background-color: #333333;overflow: hidden; margin:0; list-style-type: none;">
-		<li style="float:left;"><a href="index.html" style="color:white; display:block; padding: 16px; text-decoration:none;">HOME</a></li>
-		<li style="float:left;"><a href="About Me.html" style="color:white; display:block; padding: 16px; text-decoration:none;"> ABOUT</a></li>
-		<li style="float:left;"><a href="Contribution.html" style=" color:white; display:block; padding: 16px; text-decoration:none;"> CONTRIBUTION</a></li>
-		<li style="float:left;"><a href="Contact Me.html" style=" color:white; display:block; padding: 16px; text-decoration:none;"> CONTACT ME</a></li>
-		<li style="float:left;"><a href="Feedback.html" style=" color:white; display:block;padding: 16px; text-decoration:none;"> FEEDBACK</a></li>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a class="active" href="About Me.html"> ABOUT</a></li>
+		<li><a href="Contribution.html"> CONTRIBUTION</a></li>
+		<li><a href="Contact Me.html"> CONTACT ME</a></li>
+		<li><a href="Feedback.html"> FEEDBACK</a></li>
 	</ul>
 	</div>
-	<!--link to first page-->
-	<a href="index.html" style="color:white; background-color:#78ccd0; font-size:30px; text-decoration:none; font-family:monospace;"> Back to Home</a>
-	<!--link in same page-->
-	<a href="#WID" style="color:white; background-color:#78ccd0; font-size:30px; text-decoration:none; font-family:monospace;"> Jump to WHAT I DO</a>
-	<a href="#RCD" style="color:white; background-color:#78ccd0; font-size:30px; text-decoration:none; font-family:monospace;"> Jump to RECORDS</a>
 	
-	<h1 id="TOP"style="color:white; font-family:monospace; text-align:center;font-style:italic; font-size:60px;">ABOUT ME</h1>
-	<p style="color:white; font-size:22px; font-family:monospace; margin-top:100px; text-align:center;"> 
-	I'm a casual 20 years old full-time student in my last semester in pursuing Diploma in Computer Science. 
-	My passion in translating videos from Korean to English comes from my hobby which is watching South Korea's shows and exploring it's culture that I fell in love it.
-	The other main reason I started contributing to the community is because in my life I've met a lot of good people that helped me in a lot of way and I figured out,
-	the only way for me as a student without any income to give back to others is by my decent understanding in the South Korean language and culture that is popular worldwide.</p>
+	<h1 id="TOP">ABOUT ME</h1>
+	<p> 
+	A casual 21 years old full-time student in my last semester in pursuing Diploma in Computer Science. 
+	My passion in translating videos from Korean to English comes from my hobby of watching South Korea's shows and realizing that <span>understanding</span> 
+	something, goes a long way. It leads to a good communication and the word "<span>공감</span>" which means sympathy.
+	The other main reason I started contributing to the community is because I wanted to give back whatever help I received from others in my life and I figured
+	one of the ways for me as a student without any income to do so is by utilizing my decent understanding of the South Korean language and its culture that is popular 
+	worldwide in this present time.
+	</p>
 	 
-	<h1 id="WID" style="color:white; font-family:monospace; text-align:center;font-style:italic; font-size:60px; margin-top:100px;">WHAT I DO</h1>
-	<p style="color:white; font-size:22px; font-family:monospace; margin-top:100px; text-align:center;"> 
-	As said above, I voluntarily <span style="color:green;text-decoration:none;"> translate videos</span> on South Korean live video streaming service platform, V LIVE;
-	that is used by celebrities to communicate with their fans. I am currently in two teams, one for <span style="color:green;text-decoration:none;">popular rookie group "ITZY"
+	<h1 id="WID">WHAT I DO</h1>
+	<p> 
+	As said above, I voluntarily <span> translate videos</span> on South Korean live video streaming service platform, V LIVE;
+	that is used by celebrities to communicate with their fans. I am currently in two teams, one for <span>popular rookie group "ITZY"
 	and "fromis_9".</span><img src="contribution1.png" alt="Translation process" width=1012 height=492></p>
 	
-	<p style="color:white; font-size:22px; font-family:monospace; margin-top:100px; text-align:center;"> 
-	I also <span style="color:green;text-decoration:none;"</span>time the videos</span> which is a crucial part that people easy to overlook. A viewer can't understand
-	properly if it's out of order. And I consider myself trustworthy as I am very sensitive about precise timing.
+	<p> 
+	I also <span>time the videos</span> which is a crucial part that people easy to overlook, because, obviously viewers will have a hard time trying to figure out 
+	where does that certain line of translation belongs to if it's out of order, right?
 	<img src="contribution3.png" alt="Timing process" width=912 height=492></p>
 	
-	<h1 id="RCD" style="color:white; font-family:monospace; text-align:center;font-style:italic; font-size:60px; margin-top:100px;">RECORDS</h1>
-	<p style="color:white; font-size:22px; font-family:monospace; margin-top:100px; text-align:center;"> 
-	Below shown my current record, since I started translating near the end of the year 2019.</span>
+	<h1 id="RCD">RECORDS</h1>
+	<p> 
+	Below shown my current record, ever since I started translating near the end of the year 2019.</span>
 	<img src="contribution2.png" alt="Records" width=812 height=342></p>
 	<!--link to top in same page-->
-	<a href="#TOP" style="color:white; background-color:#78ccd0; font-size:30px; text-decoration:none; font-family:monospace;"> Jump to TOP</a>
+	<div class="center">
+	<a href="#TOP" style="color:white; background-color:#78ccd0; font-size:30px; text-decoration:none; font-family:monospace; text-align:center;"> Back to TOP</a>
+	</div>
 </body>
 </html>
