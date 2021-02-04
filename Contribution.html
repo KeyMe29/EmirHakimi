@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+	ul{
+		padding: 0;
+		background-color: #333333;
+		overflow: hidden; 
+		margin:0; 
+		list-style-type: none;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	li{
+		float: left;
+	} 
+	li a{
+		color: white;
+		display:block;
+		padding: 16px;
+		text-decoration: none;
+	}	
+	li a:hover:not(.active) {
+		background-color: #111;
+	}	
+	.active {
+		background-color: #4CAF50;
+	}
+	.center {
+		margin:0 auto;
+		width: 500px;
+	}
+	p{
+		color:white; 
+		font-size:22px; 
+		font-family:monospace; 
+		margin-top:100px;
+	}
+	a{
+		color:green;
+		text-decoration:none;
+	}
+</style>
 <head>
-	<title>Contribution | Emir Hakimi</title>
+	<title>Home | Emir Hakimi</title>
 </head>
 <body style="background-color:black;">
 	<!--menu bar-->
 	<div style="font-family:Verdana;">
-	<ul style="padding: 0;background-color: #333333;overflow: hidden; margin:0; list-style-type: none;">
-		<li style="float:left;"><a href="index.html" style="color:white; display:block; padding: 16px; text-decoration:none;">HOME</a></li>
-		<li style="float:left;"><a href="About Me.html" style="color:white; display:block; padding: 16px; text-decoration:none;"> ABOUT</a></li>
-		<li style="float:left;"><a href="Contribution.html" style=" color:white; display:block; padding: 16px; text-decoration:none;"> CONTRIBUTION</a></li>
-		<li style="float:left;"><a href="Contact Me.html" style=" color:white; display:block; padding: 16px; text-decoration:none;"> CONTACT ME</a></li>
-		<li style="float:left;"><a href="Feedback.html" style=" color:white; display:block;padding: 16px; text-decoration:none;"> FEEDBACK</a></li>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="About Me.html"> ABOUT</a></li>
+		<li><a class="active" href="Contribution.html"> CONTRIBUTION</a></li>
+		<li><a href="Contact Me.html"> CONTACT ME</a></li>
+		<li><a href="Feedback.html"> FEEDBACK</a></li>
 	</ul>
 	</div>
-	<!--link to first page-->
-	<a href="index.html" style="color:white; background-color:#78ccd0; font-size:30px; text-decoration:none; font-family:monospace;"> Back to Home</a>
 	
 	<h1 id="TOP"style="color:white; font-family:monospace; text-align:center;font-style:italic; font-size:60px;">HIGHLIGHTED SUBBED VIDEOS</h1>
 	<hr style="border: 1px solid green;">
@@ -23,17 +62,21 @@
 	<pre style="color:white; font-size:26px; font-family:monospace; margin-top:30px; text-align:center;"> 
 	Below shown are few example of videos I listed, 
 	in which was mostly translated and/or timed by me. 
-	For full list of videos, visit <a href="https://subtitle.vlive.tv/profile/KeyMe" target=_blank style="color:green;text-decoration:none;">my profile.</a></pre>
+	For full list of videos, visit <a href="https://subtitle.vlive.tv/profile/KeyMe" target=_blank>my profile.</a></pre>
 	<!--lists of videos-->
-	<p style="color:white; font-size:22px; font-family:monospace; margin-top:100px;">
-	<a href="https://www.vlive.tv/video/92499" target=_blank style="color:green;text-decoration:none;">[181005] Because It's Raining</a></p>
+	<div class="center">
+	<p>
+	<a href="https://www.vlive.tv/video/92499" target=_blank>[181005] Because It's Raining</a></p>
 	<iframe src='https://www.vlive.tv/embed/92499?autoPlay=false' frameborder='yes' scrolling='no' marginwidth='0' marginheight='0' WIDTH='544' HEIGHT='306' allowfullscreen width ></iframe><br>
-	<p style="color:white; font-size:22px; font-family:monospace; margin-top:100px;">
-	<a href="https://www.vlive.tv/video/167750" target=_blank style="color:green;text-decoration:none;">[191227] HAPPY GYURI DAY🍊</a></p>
+	<p>
+	<a href="https://www.vlive.tv/video/167750" target=_blank>[191227] HAPPY GYURI DAY🍊</a></p>
 	<iframe src='https://www.vlive.tv/embed/167750?autoPlay=false' frameborder='yes' scrolling='no' marginwidth='0' marginheight='0' WIDTH='544' HEIGHT='306' allowfullscreen width></iframe><br>
-	<p style="color:white; font-size:22px; font-family:monospace; margin-top:100px;">
-	<a href="https://www.vlive.tv/video/192987" target=_blank style="color:green;text-decoration:none;">[200525] [#Chaeryeong] Ryeongchae's Monday♡</a></p>
+	<p>
+	<a href="https://www.vlive.tv/video/192987" target=_blank>[200525] [#Chaeryeong] Ryeongchae's Monday♡</a></p>
 	<iframe src='https://www.vlive.tv/embed/192987?autoPlay=false' frameborder='yes' scrolling='no' marginwidth='0' marginheight='0' WIDTH='544' HEIGHT='306' allowfullscreen width></iframe>
-	<a href="#TOP" style="color:white; background-color:#78ccd0; font-size:30px; text-decoration:none; font-family:monospace;"> Jump To TOP</a>
+	</div>
+	<div class="center">
+	<a href="#TOP" style="color:white; background-color:#78ccd0; font-size:30px; text-decoration:none; font-family:monospace;"> Back To TOP</a>
+	</div>
 </body>
 </html>
