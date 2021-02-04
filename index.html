@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+	ul{
+		padding: 0;
+		background-color: #333333;
+		overflow: hidden; 
+		margin:0; 
+		list-style-type: none;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	li{
+		float: left;
+	} 
+	li a{
+		color: white;
+		display:block;
+		padding: 16px;
+		text-decoration: none;
+	}	
+	li a:hover:not(.active) {
+		background-color: #111;
+	}	
+	.active {
+		background-color: #4CAF50;
+	}	
+</style>
 <head>
 	<title>Home | Emir Hakimi</title>
 </head>
 <body style="background-color:black;">
 	<!--menu bar-->
 	<div style="font-family:Verdana;">
-	<ul style="padding: 0;background-color: #333333;overflow: hidden; margin:0; list-style-type: none;">
-		<li style="float:left;"><a href="index.html" style="color:white; display:block; padding: 16px; text-decoration:none;">HOME</a></li>
-		<li style="float:left;"><a href="About Me.html" style="color:white; display:block; padding: 16px; text-decoration:none;"> ABOUT</a></li>
-		<li style="float:left;"><a href="Contribution.html" style=" color:white; display:block; padding: 16px; text-decoration:none;"> CONTRIBUTION</a></li>
-		<li style="float:left;"><a href="Contact Me.html" style=" color:white; display:block; padding: 16px; text-decoration:none;"> CONTACT ME</a></li>
-		<li style="float:left;"><a href="Feedback.html" style=" color:white; display:block;padding: 16px; text-decoration:none;"> FEEDBACK</a></li>
+	<ul>
+		<li><a class="active" href="index.html">HOME</a></li>
+		<li><a href="About Me.html"> ABOUT</a></li>
+		<li><a href="Contribution.html"> CONTRIBUTION</a></li>
+		<li><a href="Contact Me.html"> CONTACT ME</a></li>
+		<li><a href="Feedback.html"> FEEDBACK</a></li>
 	</ul>
 	</div>	
-	<!-- audio in website, Chrome doesn't allow autoplay-->
-	<audio controls autoPlay>
-	<source src="SG_Piano.mp3" type="audio/mp3"></audio>
 
 	<h1 style="color:white;font-style:italic; font-size:50px; width: 521px; position: absolute; left:300px; top:270px;">EMIR HAKIMI</h1>
 	<pre style="color:white; font-size:30px; position: absolute; left:160px; top:340px;">
